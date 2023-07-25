@@ -9,20 +9,35 @@
 #the output is: 'fibonacci(7) is 13'
 
 
+#Solution:
+ 
 def fibonacci(n):
     first = 0
     second = 1
     temp = 0
+
+    # returns -1 if input is below 0:
     if n < 0:
         return -1
+    
+    # immediate returns if value is one
+    # of the two predefined start values:
     if n == 0:
         return 0
     elif n == 1:
         return 1
+
+    # Values are starting at n = 2
+    # doing the for loop once per
+    # iteration above index 0 and 1
+    # (which are the predefined values)
     for i in range(n-1):
         temp = first
         first = second
         second = temp + second
+
+    # Once the loop is complete the top most 
+    # value computed in the sequence is returned
     return second
 
 if __name__ == '__main__':
