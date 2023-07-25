@@ -29,7 +29,7 @@ phone_number = int(input())
 
 # Solution Two: String Slicing
 # This is the faster option. The int is converted to a string, 
-# which is then sliced into the requisit components.
+# which is then sliced into the requisite components.
 
 phone_str = str(phone_number)
 print(f'({phone_str[0:3]}) {phone_str[3:6]}-{phone_str[6:]}')
