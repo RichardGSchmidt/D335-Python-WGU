@@ -32,12 +32,18 @@ def fibonacci(n):
     # iteration above index 0 and 1
     # (which are the predefined values)
     for i in range(n-1):
+        # temp value to store the first value:
         temp = first
+
+        # the first value is updated to be the original second value:
         first = second
+
+        # the second value is then updated with the original first value
+        # added to the original second value:
         second = temp + second
 
     # Once the loop is complete the top most 
-    # value computed in the sequence is returned
+    # value computed in the sequence (second) is returned:
     return second
 
 if __name__ == '__main__':
