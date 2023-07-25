@@ -29,8 +29,12 @@
 #Brenda went to Philadelphia to buy 6 different types of bells
 
 
-user_input = input()
+# Read a value from a user and store the value in first_name
+first_name = input()
+generic_location = input()
+whole_number = input()
+plural_noun = input()
 
-while((user_input != 'done') and (user_input != 'd') and (user_input != 'Done')):
-    print(user_input[::-1])
-    user_input = input()
+
+# Output a short story using the four input values. Do not modify the code below.
+print(first_name, 'went to', generic_location, 'to buy', whole_number, 'different types of', plural_noun)
