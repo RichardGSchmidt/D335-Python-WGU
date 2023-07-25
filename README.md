@@ -9,6 +9,14 @@ This repository is intended to be used by students who are having difficulty sol
 
 The recommended usage of this repository is to attempt the lab independently and to use this repository as a guide if you get stuck on something.
 
+The code provided can either be directly copied and pasted into the Zylabs (make sure you check inputs!) or they can be run via a CLI while in the script's directory such as the following example:
+
+```bash
+C:\<script file directory>\python question01.py
+```
+
+After which you will have to provide inputs to the command prompt.
+
 This can also be used to compare solutions, as there are multiple ways to solve these questions, some involving much less logic than others.  If you find a solution that is more efficient and readable, feel free to submit a pull request.
 
 ## Contributing
