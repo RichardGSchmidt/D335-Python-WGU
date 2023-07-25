@@ -12,7 +12,7 @@ The recommended usage of this repository is to attempt the lab independently and
 The code provided can either be directly copied and pasted into the Zylabs (make sure you check inputs!) or they can be run via a CLI while in the script's directory such as the following example:
 
 ```bash
-C:\<script file directory>\python question01.py
+C:\script_file_directory\python question01.py
 ```
 
 After which you will have to provide inputs to the command prompt.
