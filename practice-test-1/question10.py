@@ -14,7 +14,7 @@
 # ereht olleH
 # yeH
 
-# Solution String Slicing inside a while loop
+# Solution: String Slicing inside a while loop
 
 # User input
 user_input = input()
