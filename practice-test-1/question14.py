@@ -43,6 +43,12 @@ for i in range(len(test_str)//2):
         palindrome = False
         break
 
+# This can also be done without a for loop, but is less computationally efficient:
+# 
+# if test_str != test_str[::-1]:
+#   palindrome = False
+
+
 if palindrome:
     out_str += f'{user_str} is a palindrome'
 else:
