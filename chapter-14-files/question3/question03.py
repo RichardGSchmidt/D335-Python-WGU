@@ -101,12 +101,12 @@ for i in range(len(grades)):
         letter_grade = 'F'
     grades[i].append(letter_grade)
 
-    # totals taken here are used later for exam averages
+    # Running sums taken here for class exam averages later
     exam_totals[0] += int(grades[i][2])
     exam_totals[1] += int(grades[i][3])
     exam_totals[2] += int(grades[i][4])
 
-# For loop calculates the exam averages
+# For loop that calculates the class exam averages
 for i in range(3):
     exam_averages[i] = exam_totals[i] / len(grades)
 
@@ -119,5 +119,6 @@ for i in range(len(grades)):
 #   that is used to double space the lines as per output requirements. 
 fileout += f'\nAverages: midterm1 {exam_averages[0]:.2f}, midterm2 {exam_averages[1]:.2f}, final {exam_averages[2]:.2f}\n'
 
+# Output to file
 with open('report.txt', 'w') as file_out:
     file_out.write(fileout)
