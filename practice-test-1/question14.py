@@ -34,8 +34,14 @@ for i in user_str:
 #   (If the number of characters is odd, the central value is always considered a mirror
 #   of itself, so there is never a reason to compare it to anything.)
 for i in range(len(test_str)//2):
+
+    # Index -1 is the rightmost char while Index 0 is the leftmost char.
+    #   They are both the starting points as the loop moves one letter
+    #   inward each itteration. If there is a mismatch, the boolean is
+    #   set false and the for loop is exited.
     if test_str[0+i] != test_str[-1-i]:
         palindrome = False
+        break
 
 if palindrome:
     out_str += f'{user_str} is a palindrome'
