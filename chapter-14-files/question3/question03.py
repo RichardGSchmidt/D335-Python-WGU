@@ -81,11 +81,10 @@ fileout = ''
 #    [2] Charlton    Caius   73   94  80
 #    [3] Mayo        Tyrese  88   61  36
 #    [4] Stern       Brenda  90   86  45
-
+#
 # To find the final grade for each student we take the sum of
-# the values at j indexes 2, 3 and 4 and divide by 3.
-# Then a branching statement determines the letter grade.
-
+#   the values at j indexes 2, 3 and 4 and divide by 3.
+#   Then a branching statement determines the letter grade.
 for i in range(len(grades)):
     grade = (int(grades[i][2])+int(grades[i][3])+int(grades[i][4])) / 3
     letter_grade = ''
