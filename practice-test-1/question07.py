@@ -24,10 +24,20 @@ print(min(nums))
 
 # If you don't want to use the built in min function (which you really should):
 
+# You can use if statements:
 # min_val = nums[0]
 
 # if nums[1] < min_val:
 #    min_val = nums[1]
 # elif nums[2] < min_val:
 #    min_val = nums[2]
+# print(min_val)
+
+
+# Or a loop:
+
+# min_val = nums[0]
+# for num in nums:
+#     if num < min_val:
+#         min_val = num
 # print(min_val)
