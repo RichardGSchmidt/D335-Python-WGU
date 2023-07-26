@@ -89,14 +89,16 @@ for i in range(len(my_dict)):
 # Exports string into the output_keys.txt    
 with open(out_keys, 'w') as file_out:
     file_out.write(out_str)
-print(out_str)
+# print(out_str) # test outputs, no effect on grading, but I would disable 
+# this on the real test.
 
 # Builds string for output into out_titles.txt
 out_str = ''
 titles.sort()
 for title in titles:
     out_str += title + '\n'
-print(out_str)
+# print(out_str) # test outputs, no effect on grading, but I would disable 
+# this on the real test.
 
 # Exports string into out_titles.txt
 with open(out_titles, 'w') as file_out:
