@@ -27,15 +27,12 @@ for i in user_str:
         test_str += i
 
 # this tests the string going to the halfway point 
-# (not including a central value if the number of characters is odd).
-
-# This is done because in a palindrome you compare the opposite sides
-# against each other.  So when you have checked halfway up the string, you've
-# also checked halfway down the string.
-
-# (If the number of characters is odd, the central value is always considered a mirror
-# of itself, so there is never a reason to compare it.)
-
+#   (not including a central value if the number of characters is odd).
+#   This is done because in a palindrome you compare the opposite sides
+#   against each other.  So when you have checked halfway up the string, you've
+#   also checked halfway down the string.
+#   (If the number of characters is odd, the central value is always considered a mirror
+#   of itself, so there is never a reason to compare it to anything.)
 for i in range(len(test_str)//2):
     if test_str[0+i] != test_str[-1-i]:
         palindrome = False
