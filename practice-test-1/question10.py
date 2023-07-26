@@ -19,14 +19,14 @@
 # User input
 user_input = input()
 
-# A while loop is used to check for the exit keyword
+# A while loop is used to check for exit keywords (variations of the word "done")
 while((user_input != 'done') and (user_input != 'd') and (user_input != 'Done')):
     
     # In the slice: [::-1] 
-    # The two empty colons slice the default scope (the entire string),
-    # but the -1 in the slice makes the interval count backwards from the end
+    #   The two empty colons slice the default scope (the entire string),
+    #   but the -1 in the slice makes the interval count backwards from the end
     print(user_input[::-1])
 
-    # next input is take, if the exit keyword (done variations)
-    # are entered, the while loop will exit.
+    # next input is taken, if one of the exit keywords is entered, 
+    #   the while loop will exit.
     user_input = input()

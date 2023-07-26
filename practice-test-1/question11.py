@@ -20,17 +20,17 @@ def fibonacci(n):
     if n < 0:
         return -1
     
-    # immediate returns if value is one
-    # of the two predefined start values:
+    # immediate returns if the index is one
+    #   of the two predefined start values:
     if n == 0:
         return 0
     elif n == 1:
         return 1
 
     # Values are starting at n = 2
-    # doing the for loop once per
-    # iteration above index 0 and 1
-    # (which are the predefined values)
+    #   doing the for loop once per
+    #   iteration above index 0 and 1
+    #   (which are the predefined values)
     for i in range(n-1):
         # temp value to store the first value:
         temp = first
@@ -39,11 +39,11 @@ def fibonacci(n):
         first = second
 
         # the second value is then updated with the original first value
-        # added to the original second value:
+        #   added to the original second value:
         second = temp + second
 
     # Once the loop is complete the top most 
-    # value computed in the sequence (second) is returned:
+    #   value computed in the sequence (second) is returned:
     return second
 
 if __name__ == '__main__':
