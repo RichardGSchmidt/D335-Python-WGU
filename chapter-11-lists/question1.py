@@ -14,16 +14,8 @@
 
 # Solution:
 
-# Get raw input
-str_list = input()
-
-# Split input into a list of strings
-tokens = str_list.split()
-
-# Convert to numbers
-nums = []
-for token in tokens:
-    nums.append(int(token))
+# Get raw input and convert to list of ints
+nums = [int(i) for i in input().split()]
 
 # Output max and average
 print(f'{sum(nums)//len(nums)} {max(nums)}')
