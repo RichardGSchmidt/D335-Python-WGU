@@ -15,12 +15,8 @@
 # Solution:
 
 # Next portion same as chapter-11-lists\question1.py
-user_input = input()
-tokens = user_input.split()
-nums = []
-for token in tokens:
-    if int(token) >= 0:
-        nums.append(int(token))
+nums = [int(i) for i in input().split()]
+
 
 # Sort and output
 nums.sort()
