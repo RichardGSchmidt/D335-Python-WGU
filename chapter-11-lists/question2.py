@@ -14,9 +14,8 @@
 
 # Solution:
 
-# Next portion same as chapter-11-lists\question1.py
-nums = [int(i) for i in input().split()]
-
+# Take input and add to num list if non-negative
+nums = [int(i) for i in input().split() if int(i) >= 0]
 
 # Sort and output
 nums.sort()

@@ -1,33 +1,45 @@
-#    11.18 LAB: Elements in a range
-#   
-#   Write a program that first gets a list of integers from input. That list is followed by two more integers representing lower and upper bounds of a range. Your program should output all integers from the list that are within that range (inclusive of the bounds).
-#   
-#   Ex: If the input is:
-#   
-#   25 51 0 200 33
-#   0 50
-#   
-#   the output is:
-#   
-#   25 0 33 
-#   
-#   The bounds are 0-50, so 51 and 200 are out of range and thus not output.
-#   
-#   For coding simplicity, follow each output integer by a space, even the last one. Do not end with newline.
-
+#     11.20 LAB: Check if list is sorted
+#    
+#    Write the in_order() function, which has a list of integers as a parameter, and returns True if the integers are sorted (in order from low to high) or False otherwise. The program outputs "In order" if the list is sorted, or "Not in order" if the list is not sorted.
+#    
+#    Ex: If the list passed to the in_order() function is [5, 6, 7, 8, 3], then the function returns False and the program outputs:
+#    
+#    Not in order
+#    
+#    Ex: If the list passed to the in_order() function is [5, 6, 7, 8, 10], then the function returns True and the program outputs:
+#    
+#    In order
+#    
+#    Note: Use a for loop. DO NOT use sorted() or sort().
 
 # Solution:
 
-# Take inputs
-user_input = input()
-user_input2 = input()
+def in_order(nums):
+    # bool set to true for default case
+    # to account for one item list
+    # which is always sorted
+    is_ordered = True
 
-# determine limits based on input
-limits = [int (i) for i in user_input2.split()]
+    # Check if list is sorted
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i+1]:
+            is_ordered = False
 
-# determine numbers in range based on inputs
-nums = [int (i) for i in user_input.split() if ((int(limits[0]) <= int(i)) and (int(i) <= int(limits[1])))]
-
-# print output
-for num in nums:
-    print(f'{num}', end=' ')
+    # Return result
+    return is_ordered            
+        
+    
+if __name__ == '__main__':
+    # Test out-of-order example
+    nums1 = [5, 6, 7, 8, 3]
+    if in_order(nums1):
+        print('In order')
+    else:
+        print('Not in order')
+        
+    # Test in-order example
+    nums2 = [5, 6, 7, 8, 10]
+    if in_order(nums2):
+        print('In order')
+    else:
+        print('Not in order')
